@@ -1,0 +1,23 @@
+{
+  "heading": "Begin your journey with ",
+  "headingGold": "Tiger's Eyes",
+  "sub": "Enquire within — Louise works from three locations. Get in touch to arrange the location, date and time that suits you best.",
+  "locations": [
+    {
+      "name": "VOCO Hotel, Telford",
+      "address": "(Formerly The Holiday Inn)<br>St. Quentin Gate, Telford,<br>Shropshire, TF3 4EH"
+    },
+    {
+      "name": "Vean Tattoo Academy",
+      "address": "Wolverhampton,<br>WV1 4LF"
+    },
+    {
+      "name": "Ketley",
+      "address": "Telford,<br>TF1 5FD"
+    }
+  ],
+  "bookingNote": "service / treatment, date and time — is provided with receipt of deposit.",
+  "formHeading": "Book your consultation",
+  "formIntro": "Ready to transform your look, commission a bespoke piece, or discuss a tattoo design?",
+  "serving": "Serving Telford, Wolverhampton, Ketley and the wider West Midlands."
+}

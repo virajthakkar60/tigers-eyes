@@ -1,0 +1,96 @@
+---
+permalink: /microblading.html
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microblading Telford & Wolverhampton | Tiger's Eyes — £250 Full Treatment</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<meta name="theme-color" content="#c29a4b">
+<meta name="description" content="Tiger's Eyes Microblading — soft, natural, bespoke brows. £250 full treatment including top-up after 6–8 weeks. CPD certified, fully insured. Telford, Wolverhampton & Ketley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body><header><nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
+<button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+<ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="microblading.html" class="active">Microblading</a></li>
+<li><a href="artwork.html">Bespoke Artwork</a></li>
+<li><a href="tattoos.html">Tattoos &amp; Prices</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="nav-cta" href="contact.html">Book Now</a></li></ul>
+</nav></header>
+<main>
+<div class="page-hero">
+  <p class="eyebrow">Tiger's Eyes Microblading</p>
+  <h1>Perfect Brows, <span class="gold-text">{{ microblading.headingGold }}</span></h1>
+  <span class="script">{{ microblading.script }}</span>
+  <p class="sub">{{ microblading.sub }}</p>
+</div>
+<div class="celestial" aria-hidden="true"><span class="line"></span>
+<svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 2l1.8 5.2L67 9l-5.2 1.8L60 16l-1.8-5.2L53 9l5.2-1.8L60 2z" fill="#c29a4b"/>
+<circle cx="38" cy="12" r="1.6" fill="#d8b46a"/><circle cx="82" cy="12" r="1.6" fill="#d8b46a"/>
+<circle cx="24" cy="16" r="1" fill="#e9d9b4"/><circle cx="96" cy="16" r="1" fill="#e9d9b4"/>
+<path d="M60 20a6 6 0 0 0 5 8 6.5 6.5 0 1 1-5-8z" fill="#c29a4b"/>
+</svg><span class="line r"></span></div>
+<section style="padding-top:56px">
+  <div class="wrap feature">
+    <div class="prose reveal">
+      <h2>{{ microblading.bodyHeading }}</h2>
+      <p>{{ microblading.body1 | safe }}</p>
+      <p>{{ microblading.body2 }}</p>
+      <div class="note-strip"><b>Important:</b> {{ microblading.note }}</div>
+    </div>
+    <div class="price-panel reveal">
+      <div class="big gold-text">{{ microblading.price }}</div>
+      <div class="lbl">{{ microblading.priceLabel }}</div>
+      <ul class="tick">
+        <li>{{ microblading.features[0] }}</li>
+        <li>{{ microblading.features[1] }}</li>
+        <li>{{ microblading.features[2] }}</li>
+        <li>{{ microblading.features[3] }}</li>
+        <li>{{ microblading.features[4] }}</li>
+        <li>{{ microblading.features[5] }}</li>
+      </ul>
+      <a class="btn btn-gold" href="contact.html" style="margin-top:24px;display:block;text-align:center">Book Now</a>
+    </div>
+  </div>
+</section>
+<section class="cred" style="padding-top:70px;padding-bottom:80px">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow">Client Results</p>
+    <h2>{{ microblading.galleryHeading }}</h2>
+    <div class="g-grid">
+      <figure class="g-item reveal"><div class="ph"><img src="{{ microblading.gallery[0].image }}" alt="Microblading result — soft natural strokes"></div><figcaption>{{ microblading.gallery[0].caption }}</figcaption></figure>
+      <figure class="g-item reveal"><div class="ph"><img src="{{ microblading.gallery[1].image }}" alt="Microblading result — bespoke brow shaping"></div><figcaption>{{ microblading.gallery[1].caption }}</figcaption></figure>
+      <figure class="g-item reveal"><div class="ph"><img src="{{ microblading.gallery[2].image }}" alt="Microblading result — defined but subtle"></div><figcaption>{{ microblading.gallery[2].caption }}</figcaption></figure>
+    </div>
+  </div>
+</section>
+</main>
+<div class="cta-band">
+  <span class="script gold-text" style="-webkit-text-fill-color:initial;color:var(--gold-deep)">{{ site.ctaScript }}</span>
+  <p>{{ site.ctaSub }}</p>
+  <a class="btn btn-gold" href="contact.html">{{ site.ctaButton }}</a>
+</div>
+<footer><div class="wrap">
+  <div class="f-brand"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt=""><div>{{ site.footerLine | safe }}</div></div>
+  <div><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+  <nav aria-label="Footer"><a href="about.html">About</a><a href="microblading.html">Microblading</a><a href="artwork.html">Artwork</a><a href="tattoos.html">Tattoos</a><a href="contact.html">Book Now</a></nav>
+</div></footer>
+<script>
+function toggleMenu(btn){const l=document.getElementById('navLinks');const o=l.classList.toggle('open');btn.setAttribute('aria-expanded',o);}
+if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));}
+</script>
+</body></html>

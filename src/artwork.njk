@@ -1,0 +1,121 @@
+---
+permalink: /artwork.html
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curel Personalised Bespoke Artwork | Tiger's Eyes — From £40</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<meta name="theme-color" content="#c29a4b">
+<meta name="description" content="Curel Personalised Bespoke Artwork — detailed personalised artwork, mounted or framed, created with a person's passion in mind. Prices from £40 to £150. Tiger's Eyes, Telford & Wolverhampton.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body><header><nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
+<button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+<ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="microblading.html">Microblading</a></li>
+<li><a href="artwork.html" class="active">Bespoke Artwork</a></li>
+<li><a href="tattoos.html">Tattoos &amp; Prices</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="nav-cta" href="contact.html">Book Now</a></li></ul>
+</nav></header>
+<main>
+<div class="page-hero">
+  <p class="eyebrow">Curel Personalised Bespoke Artwork</p>
+  <h1>Detailed Personalised Artwork, <span class="gold-text">{{ artwork.headingGold }}</span></h1>
+  <span class="script">{{ artwork.script }}</span>
+</div>
+<div class="celestial" aria-hidden="true"><span class="line"></span>
+<svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 2l1.8 5.2L67 9l-5.2 1.8L60 16l-1.8-5.2L53 9l5.2-1.8L60 2z" fill="#c29a4b"/>
+<circle cx="38" cy="12" r="1.6" fill="#d8b46a"/><circle cx="82" cy="12" r="1.6" fill="#d8b46a"/>
+<circle cx="24" cy="16" r="1" fill="#e9d9b4"/><circle cx="96" cy="16" r="1" fill="#e9d9b4"/>
+<path d="M60 20a6 6 0 0 0 5 8 6.5 6.5 0 1 1-5-8z" fill="#c29a4b"/>
+</svg><span class="line r"></span></div>
+<section style="padding-top:56px">
+  <div class="wrap feature">
+    <div class="ph reveal"><img src="{{ artwork.featureImage }}" alt="Framed bespoke bee artwork — the design drawn from personalised words"></div>
+    <div class="prose reveal">
+      <h2>{{ artwork.bodyHeading }}</h2>
+      <p>{{ artwork.body1 }}</p>
+      <p><b>{{ artwork.body2 }}</b> Larger commissioned works are discussed during consultation.</p>
+      <a class="btn btn-gold" href="contact.html">{{ artwork.cta }}</a>
+    </div>
+  </div>
+</section>
+<section class="cred" style="padding-top:70px;padding-bottom:80px">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow">The Gallery</p>
+    <h2>{{ artwork.galleryHeading }}</h2>
+    <div class="g-grid">
+      <figure class="g-item reveal"><div class="ph"><img src="{{ artwork.gallery[0].image }}" alt="Framed bespoke koi fish artwork"></div><figcaption>{{ artwork.gallery[0].caption }}</figcaption><p class="g-desc">{{ artwork.gallery[0].description }}</p></figure>
+      <figure class="g-item reveal"><div class="ph"><img src="{{ artwork.gallery[1].image }}" alt="Framed bespoke donkey artwork built from personalised text"></div><figcaption>{{ artwork.gallery[1].caption }}</figcaption><p class="g-desc">{{ artwork.gallery[1].description }}</p></figure>
+      <figure class="g-item reveal"><div class="ph"><img src="{{ artwork.gallery[2].image }}" alt="Framed bespoke penguin artwork with name woven through the design"></div><figcaption>{{ artwork.gallery[2].caption }}</figcaption><p class="g-desc">{{ artwork.gallery[2].description }}</p></figure>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <div class="lb-hint">Click image to zoom · drag to pan</div>
+  <div class="lb-stage">
+    <img id="lb-img" src="" alt="">
+    <div class="lb-cap" id="lb-cap"></div>
+  </div>
+</div>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'),img=document.getElementById('lb-img'),cap=document.getElementById('lb-cap');
+  var zoomed=false,panX=0,panY=0,startX=0,startY=0,dragging=false;
+  function open(src,alt,caption){img.src=src;img.alt=alt;cap.textContent=caption||'';lb.classList.add('open');document.body.style.overflow='hidden';reset();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';reset();}
+  function reset(){zoomed=false;panX=panY=0;img.classList.remove('zoomed');img.style.transform='scale(1)';}
+  function apply(){img.style.transform=zoomed?('scale(2.2) translate('+panX+'px,'+panY+'px)'):'scale(1)';}
+  // open from any gallery / feature image
+  document.querySelectorAll('.g-item .ph img, .feature .ph img').forEach(function(im){
+    im.addEventListener('click',function(){
+      var fig=im.closest('figure'),c=fig?fig.querySelector('figcaption'):null;
+      open(im.src,im.alt,c?c.textContent:im.alt);
+    });
+  });
+  img.addEventListener('click',function(e){
+    e.stopPropagation();
+    zoomed=!zoomed;img.classList.toggle('zoomed',zoomed);
+    if(!zoomed){panX=panY=0;}apply();
+  });
+  img.addEventListener('mousedown',function(e){if(!zoomed)return;dragging=true;startX=e.clientX-panX;startY=e.clientY-panY;img.style.cursor='grabbing';e.preventDefault();});
+  window.addEventListener('mousemove',function(e){if(!dragging)return;panX=(e.clientX-startX);panY=(e.clientY-startY);apply();});
+  window.addEventListener('mouseup',function(){dragging=false;if(zoomed)img.style.cursor='grab';});
+  document.querySelector('#lightbox .lb-close').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('lb-stage'))close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))close();});
+})();
+</script>
+
+</main>
+<div class="cta-band">
+  <span class="script gold-text" style="-webkit-text-fill-color:initial;color:var(--gold-deep)">{{ site.ctaScript }}</span>
+  <p>{{ site.ctaSub }}</p>
+  <a class="btn btn-gold" href="contact.html">{{ site.ctaButton }}</a>
+</div>
+<footer><div class="wrap">
+  <div class="f-brand"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt=""><div>{{ site.footerLine | safe }}</div></div>
+  <div><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+  <nav aria-label="Footer"><a href="about.html">About</a><a href="microblading.html">Microblading</a><a href="artwork.html">Artwork</a><a href="tattoos.html">Tattoos</a><a href="contact.html">Book Now</a></nav>
+</div></footer>
+<script>
+function toggleMenu(btn){const l=document.getElementById('navLinks');const o=l.classList.toggle('open');btn.setAttribute('aria-expanded',o);}
+if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));}
+</script>
+</body></html>

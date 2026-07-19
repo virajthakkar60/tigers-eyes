@@ -1,0 +1,103 @@
+---
+permalink: /contact.html
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now | Tiger's Eyes — Telford, Wolverhampton & Ketley | {{ site.phone }}</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<meta name="theme-color" content="#c29a4b">
+<meta name="description" content="Book your Tiger's Eyes consultation — microblading, bespoke artwork or tattoos. Three locations: VOCO Hotel Telford, Vean Tattoo Academy Wolverhampton, and Ketley. Call {{ site.phone }}.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body><header><nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
+<button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+<ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="microblading.html">Microblading</a></li>
+<li><a href="artwork.html">Bespoke Artwork</a></li>
+<li><a href="tattoos.html">Tattoos &amp; Prices</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+<li><a class="nav-cta" href="contact.html">Book Now</a></li></ul>
+</nav></header>
+<main>
+<div class="page-hero">
+  <p class="eyebrow">Book Now</p>
+  <h1>Begin your journey with <span class="gold-text">Tiger's Eyes</span></h1>
+  <p class="sub">{{ contact.sub }}</p>
+</div>
+<div class="celestial" aria-hidden="true"><span class="line"></span>
+<svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 2l1.8 5.2L67 9l-5.2 1.8L60 16l-1.8-5.2L53 9l5.2-1.8L60 2z" fill="#c29a4b"/>
+<circle cx="38" cy="12" r="1.6" fill="#d8b46a"/><circle cx="82" cy="12" r="1.6" fill="#d8b46a"/>
+<circle cx="24" cy="16" r="1" fill="#e9d9b4"/><circle cx="96" cy="16" r="1" fill="#e9d9b4"/>
+<path d="M60 20a6 6 0 0 0 5 8 6.5 6.5 0 1 1-5-8z" fill="#c29a4b"/>
+</svg><span class="line r"></span></div>
+<section style="padding-top:50px;padding-bottom:40px">
+  <div class="wrap">
+    <div class="loc-grid" style="margin-top:0">
+      <div class="loc reveal"><h3>{{ contact.locations[0].name }}</h3><p>{{ contact.locations[0].address | safe }}</p></div>
+      <div class="loc reveal"><h3>{{ contact.locations[1].name }}</h3><p>{{ contact.locations[1].address | safe }}</p></div>
+      <div class="loc reveal"><h3>{{ contact.locations[2].name }}</h3><p>{{ contact.locations[2].address | safe }}</p></div>
+    </div>
+    <div class="note-strip reveal"><b>Confirmation of appointment</b> — {{ contact.bookingNote }}</div>
+  </div>
+</section>
+<section class="cred" style="padding-top:66px;padding-bottom:80px">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">Get in Touch</p>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:16px">{{ contact.formHeading }}</h2>
+      <p style="color:var(--muted);margin-bottom:18px">{{ contact.formIntro }}</p>
+      <a class="big-contact" href="tel:{{ site.phoneLink }}">07792 948745</a>
+      <a class="big-contact" href="mailto:{{ site.email }}">{{ site.email | upper }}</a>
+      <p style="color:var(--muted);margin-top:20px;font-size:.94rem">{{ contact.serving }}</p>
+    </div>
+    <form class="form-card reveal" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="enquiry">
+      <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <label for="f-name">Name</label>
+      <input id="f-name" name="name" type="text" required autocomplete="name">
+      <label for="f-phone">Phone</label>
+      <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+      <label for="f-service">Service interest</label>
+      <select id="f-service" name="service">
+        <option>Microblading</option>
+        <option>Bespoke Personalised Artwork</option>
+        <option>Tattoo</option>
+        <option>Other / General enquiry</option>
+      </select>
+      <label for="f-msg">Message</label>
+      <textarea id="f-msg" name="message" placeholder="Tell Louise about the look or design you have in mind…"></textarea>
+      <button class="btn btn-gold" type="submit">Send Enquiry</button>
+      <p class="form-note">Your enquiry goes straight to Tiger's Eyes — Louise will be in touch soon.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+<div class="cta-band">
+  <span class="script gold-text" style="-webkit-text-fill-color:initial;color:var(--gold-deep)">{{ site.ctaScript }}</span>
+  <p>{{ site.ctaSub }}</p>
+  <a class="btn btn-gold" href="contact.html">{{ site.ctaButton }}</a>
+</div>
+<footer><div class="wrap">
+  <div class="f-brand"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt=""><div>{{ site.footerLine | safe }}</div></div>
+  <div><a href="tel:{{ site.phoneLink }}">07792 948745</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+  <nav aria-label="Footer"><a href="about.html">About</a><a href="microblading.html">Microblading</a><a href="artwork.html">Artwork</a><a href="tattoos.html">Tattoos</a><a href="contact.html">Book Now</a></nav>
+</div></footer>
+<script>
+function toggleMenu(btn){const l=document.getElementById('navLinks');const o=l.classList.toggle('open');btn.setAttribute('aria-expanded',o);}
+if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));}
+</script>
+</body></html>

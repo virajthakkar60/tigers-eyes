@@ -1,0 +1,29 @@
+{
+  "heading": "Detailed Personalised Artwork, ",
+  "headingGold": "Mounted or Framed",
+  "script": "Created with a person's passion in mind",
+  "bodyHeading": "Your story, drawn into the design",
+  "body1": "During your initial design consultation with Louise, you will discuss the story that you want to tell, decide how you want your moment to be captured. Whether this is a gift to yourself or for a loved one, have your chosen message or name running right through the design.",
+  "body2": "Prices depend on size and detail — starting from £40 to £150.",
+  "body2b": " Larger commissioned works are discussed during consultation.",
+  "cta": "Enquire About a Commission",
+  "galleryHeading": "Bespoke pieces, each one unique",
+  "featureImage": "/images/framed-bespoke-bee-artwork-the-design-dr-c913fda6.webp",
+  "gallery": [
+    {
+      "image": "/images/framed-bespoke-koi-fish-artwork-8c60b20c.webp",
+      "caption": "Koi — framed commission",
+      "description": "A flowing koi rendered entirely in hand-lettered words chosen by the client."
+    },
+    {
+      "image": "/images/framed-bespoke-donkey-artwork-built-from-39a83f82.webp",
+      "caption": "Donkey — personalised detail",
+      "description": "A playful portrait where the recipient’s name and message form every line of fur."
+    },
+    {
+      "image": "/images/framed-bespoke-penguin-artwork-with-name-61585c6c.webp",
+      "caption": "Penguin — name woven through",
+      "description": "A characterful penguin with a hidden name woven through the artwork."
+    }
+  ]
+}

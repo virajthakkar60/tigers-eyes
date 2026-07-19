@@ -1,0 +1,95 @@
+---
+permalink: /about.html
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Tiger's Eyes | Louise Curel — Your Trusted Beauty Expert</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<meta name="theme-color" content="#c29a4b">
+<meta name="description" content="Meet Louise Curel, business owner and artistic director at Tiger's Eyes — CPD accredited microblading artist and tattoo artist based across Telford, Wolverhampton and Ketley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body><header><nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
+<button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+<ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="microblading.html">Microblading</a></li>
+<li><a href="artwork.html">Bespoke Artwork</a></li>
+<li><a href="tattoos.html">Tattoos &amp; Prices</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="nav-cta" href="contact.html">Book Now</a></li></ul>
+</nav></header>
+<main>
+<div class="page-hero">
+  <p class="eyebrow">About Tiger's Eyes</p>
+  <h1>Your journey to a <span class="gold-text">{{ about.headingGold }}</span></h1>
+</div>
+<div class="celestial" aria-hidden="true"><span class="line"></span>
+<svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 2l1.8 5.2L67 9l-5.2 1.8L60 16l-1.8-5.2L53 9l5.2-1.8L60 2z" fill="#c29a4b"/>
+<circle cx="38" cy="12" r="1.6" fill="#d8b46a"/><circle cx="82" cy="12" r="1.6" fill="#d8b46a"/>
+<circle cx="24" cy="16" r="1" fill="#e9d9b4"/><circle cx="96" cy="16" r="1" fill="#e9d9b4"/>
+<path d="M60 20a6 6 0 0 0 5 8 6.5 6.5 0 1 1-5-8z" fill="#c29a4b"/>
+</svg><span class="line r"></span></div>
+<section style="padding-top:56px">
+  <div class="wrap duo">
+    <figure class="portrait reveal">
+      <img src="{{ about.portrait }}" alt="Louise Curel, business owner and artistic director at Tiger's Eyes">
+      <figcaption>Louise Curel</figcaption>
+    </figure>
+    <div class="prose reveal">
+      <p>{{ about.bio | safe }}</p>
+    </div>
+  </div>
+</section>
+<section class="cred">
+  <div class="wrap">
+    <h2>{{ about.credHeading }}</h2>
+    <p class="sub">{{ about.credSub }}</p>
+    <div class="cred-grid">
+      <div class="cred-item reveal">
+        <h3>{{ about.creds[0].title | safe }}</h3>
+        <p>{{ about.creds[0].text }}</p>
+      </div>
+      <div class="cred-item reveal">
+        <h3>{{ about.creds[1].title | safe }}</h3>
+        <p>{{ about.creds[1].text }}</p>
+      </div>
+      <div class="cred-item reveal">
+        <h3>{{ about.creds[2].title | safe }}</h3>
+        <p>{{ about.creds[2].text }}</p>
+      </div>
+      <div class="cred-item reveal">
+        <h3>{{ about.creds[3].title | safe }}</h3>
+        <p>{{ about.creds[3].text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<div class="cta-band">
+  <span class="script gold-text" style="-webkit-text-fill-color:initial;color:var(--gold-deep)">{{ site.ctaScript }}</span>
+  <p>{{ site.ctaSub }}</p>
+  <a class="btn btn-gold" href="contact.html">{{ site.ctaButton }}</a>
+</div>
+<footer><div class="wrap">
+  <div class="f-brand"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt=""><div>{{ site.footerLine | safe }}</div></div>
+  <div><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+  <nav aria-label="Footer"><a href="about.html">About</a><a href="microblading.html">Microblading</a><a href="artwork.html">Artwork</a><a href="tattoos.html">Tattoos</a><a href="contact.html">Book Now</a></nav>
+</div></footer>
+<script>
+function toggleMenu(btn){const l=document.getElementById('navLinks');const o=l.classList.toggle('open');btn.setAttribute('aria-expanded',o);}
+if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));}
+</script>
+</body></html>

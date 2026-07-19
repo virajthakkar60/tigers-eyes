@@ -1,0 +1,30 @@
+{
+  "heroHeadline": "Enhancing your natural beauty with ",
+  "heroHeadlineGold": "artistry &amp; precision",
+  "heroScript": "Microblading · Bespoke Artwork · Tattoos",
+  "heroIntro": "Specialising in enhancing your natural beauty through our three core services: Microblading, bespoke personalised artwork, and professional tattooing. Our mission is to provide a transformative experience, ensuring each client leaves feeling confident and revitalized.",
+  "servicesHeading": "Our Core Services",
+  "servicesIntro": "Our studio is designed to be a sanctuary where artistry meets precision, offering safe and effective solutions tailored to your unique aesthetic desires.",
+  "meetHeading": "Meet Louise……..",
+  "meetSub": "Your trusted beauty expert",
+  "meetText1": "I'm Louise Curel, business owner and artistic director at Tiger's Eyes. My goal is to help you feel completely at ease with your semi-permanent make-up while creating a beautifully defined version of you.",
+  "meetText2": "With a focus on artistry, precision and a welcoming atmosphere, I make sure every client feels comfortable from the moment they walk in. Join me on your journey to a stunning new look.",
+  "portrait": "/images/louise-curel-business-owner-and-artistic-5cc868b6.webp",
+  "cards": [
+    {
+      "title": "Microblading",
+      "price": "£250 · Full Treatment",
+      "text": "Soft, natural, bespoke brows using the latest 'Nano Blade' techniques — perfect brows, every day. Includes top-up after 6–8 weeks."
+    },
+    {
+      "title": "Bespoke Artwork",
+      "price": "From £40 · Mounted or Framed",
+      "text": "Detailed personalised artwork created with a person's passion in mind — your chosen message or name running right through the design."
+    },
+    {
+      "title": "Tattoos",
+      "price": "From £50 · Bespoke Designs",
+      "text": "Professional bespoke designs tailored to your request — including two-part tattoos for you and a loved one, and cover-ups."
+    }
+  ]
+}

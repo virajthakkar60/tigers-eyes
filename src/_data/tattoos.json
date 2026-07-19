@@ -1,0 +1,66 @@
+{
+  "heading": "Professional Bespoke Designs, ",
+  "headingGold": "Tailored to You",
+  "sub": "CPD Certified Tattoo Artist · Fully insured · Designs created and developed from commissioned works",
+  "galleryHeading": "From stencil to skin",
+  "note": "a pre-appointment consultation, and work that is safe, hygienic, and compliant with UK standards.",
+  "priceHeading": "Tattoo Price Guide",
+  "priceIntro": "Prices dependent on design and size.",
+  "minCharge": "Minimum charge to cover set up and consumables — £50",
+  "rows": [
+    {
+      "name": "Small Tattoos",
+      "meta": "(1–3 inches)",
+      "price": "£50–£100",
+      "detail": "Simple linework, symbols, initials, tiny florals."
+    },
+    {
+      "name": "Medium Tattoos",
+      "meta": "(hand-sized)",
+      "price": "£100–£220",
+      "detail": "Shading, colour, fine-line detail."
+    },
+    {
+      "name": "Large Tattoos",
+      "meta": "",
+      "price": "£200–£400+",
+      "detail": "Forearms, shoulders, thighs, detailed blackwork or colour."
+    },
+    {
+      "name": "Half Day Sessions",
+      "meta": "(2.5–3 hours)",
+      "price": "£250–£300",
+      "detail": "Ideal for large projects including consultation."
+    },
+    {
+      "name": "Custom Design Fee",
+      "meta": "(following consultation)",
+      "price": "£20–£60",
+      "detail": "For bespoke, highly detailed artwork."
+    }
+  ],
+  "deposits": "£20 small/medium tattoos · £50 large tattoos · £100 day sessions.",
+  "depositsNote": "Non-refundable but transferable once.",
+  "gallery": [
+    {
+      "image": "/images/butterfly-and-vine-tattoo-beside-its-ori-7ef8ebd9.webp",
+      "caption": "Butterfly commission"
+    },
+    {
+      "image": "/images/butterfly-tattoo-with-matching-stencil-o-36ae81ce.webp",
+      "caption": "Design to skin"
+    },
+    {
+      "image": "/images/fine-line-floral-tattoo-on-forearm-c7faa40c.webp",
+      "caption": "Fine-line floral"
+    },
+    {
+      "image": "/images/two-part-heart-tattoo-made-of-a-loved-on-907fe7a1.webp",
+      "caption": "2-part tattoos for you and a loved one — create an overall design and, after consultation, the location and specifics can be discussed and positioned accordingly"
+    },
+    {
+      "image": "/images/cover-up-tattoo-on-the-forearm-ebf0645a.webp",
+      "caption": "Cover ups"
+    }
+  ]
+}
