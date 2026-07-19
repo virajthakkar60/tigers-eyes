@@ -1,23 +1,14 @@
 {
-  "heading": "Perfect Brows, ",
-  "headingGold": "Every Day",
-  "script": "Enhance your natural beauty with soft, natural, bespoke brows",
-  "sub": "CPD Certified Microblading Artist · Fully insured",
   "bodyHeading": "Bespoke brow design, tailored to you",
-  "body1": "Professional bespoke brow design tailored to your face shape using the latest tools such as <b>'Nano Blades'</b> which help to create the crispest hair strokes, and the latest products so you can feel colour confident with one of the UK's most talked about brands of pigments — <b>Perma Blend!</b>",
-  "body2": "Natural, hair-stroke technique with brow mapping included for long-lasting, low-maintenance results.",
-  "note": "a patch test is required before your appointment. A pre-appointment consultation is included, and every treatment is safe, hygienic, and compliant with UK standards.",
-  "price": "£250",
+  "sub": "CPD Certified Microblading Artist · Fully insured",
+  "headingGold": "Every Day",
+  "heading": "Perfect Brows, ",
+  "price": "£251",
+  "script": "Enhance your natural beauty with soft, natural, bespoke brows",
   "priceLabel": "Full Treatment",
-  "features": [
-    "150-minute appointment",
-    "Includes top-up after 6–8 weeks",
-    "Natural, hair-stroke technique",
-    "Brow mapping included",
-    "Long-lasting, low-maintenance results",
-    "Pre-appointment consultation included"
-  ],
+  "body1": "Professional bespoke brow design tailored to your face shape using the latest tools such as <b>'Nano Blades'</b> which help to create the crispest hair strokes, and the latest products so you can feel colour confident with one of the UK's most talked about brands of pigments — <b>Perma Blend!</b>",
   "galleryHeading": "Real brows, real confidence",
+  "body2": "Natural, hair-stroke technique with brow mapping included for long-lasting, low-maintenance results.",
   "gallery": [
     {
       "image": "/images/microblading-result-soft-natural-strokes-70177ea0.webp",
@@ -31,5 +22,14 @@
       "image": "/images/microblading-result-defined-but-subtle-7efd0caf.webp",
       "caption": "Defined but subtle"
     }
+  ],
+  "note": "a patch test is required before your appointment. A pre-appointment consultation is included, and every treatment is safe, hygienic, and compliant with UK standards.",
+  "features": [
+    "150-minute appointment",
+    "Includes top-up after 6–8 weeks",
+    "Natural, hair-stroke technique",
+    "Brow mapping included",
+    "Long-lasting, low-maintenance results",
+    "Pre-appointment consultation included"
   ]
 }
