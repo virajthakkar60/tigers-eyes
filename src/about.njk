@@ -17,7 +17,7 @@ permalink: /about.html
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body><header><nav class="nav" aria-label="Main navigation">
-<a class="brand" href="index.html"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
+<a class="brand" href="index.html"><img src="{{ site.logo }}" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
 <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
 <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li>
 <li><a href="about.html" class="active">About</a></li>
@@ -30,7 +30,7 @@ permalink: /about.html
 <main>
 <div class="page-hero">
   <p class="eyebrow">About Tiger's Eyes</p>
-  <h1>Your journey to a <span class="gold-text">{{ about.headingGold }}</span></h1>
+  <h1>{{ about.heading }}<span class="gold-text">{{ about.headingGold }}</span></h1>
 </div>
 <div class="celestial" aria-hidden="true"><span class="line"></span>
 <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ permalink: /about.html
   <a class="btn btn-gold" href="contact.html">{{ site.ctaButton }}</a>
 </div>
 <footer><div class="wrap">
-  <div class="f-brand"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt=""><div>{{ site.footerLine | safe }}</div></div>
+  <div class="f-brand"><img src="{{ site.logo }}" alt=""><div>{{ site.footerLine | safe }}</div></div>
   <div><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
   <nav aria-label="Footer"><a href="about.html">About</a><a href="microblading.html">Microblading</a><a href="artwork.html">Artwork</a><a href="tattoos.html">Tattoos</a><a href="contact.html">Book Now</a></nav>
 </div></footer>

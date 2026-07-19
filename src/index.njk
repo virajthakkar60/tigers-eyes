@@ -17,7 +17,7 @@ permalink: /index.html
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body><header><nav class="nav" aria-label="Main navigation">
-<a class="brand" href="index.html"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
+<a class="brand" href="index.html"><img src="{{ site.logo }}" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
 <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
 <ul class="nav-links" id="navLinks"><li><a href="index.html" class="active">Home</a></li>
 <li><a href="about.html">About</a></li>
@@ -29,7 +29,7 @@ permalink: /index.html
 </nav></header>
 <main>
 <section class="hero">
-  <img class="logo-lg" src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt="Tiger's Eyes — golden eye emblem">
+  <img class="logo-lg" src="{{ site.logo }}" alt="Tiger's Eyes — golden eye emblem">
   <h1>{{ home.heroHeadline | safe }}<span class="gold-text">{{ home.heroHeadlineGold | safe }}</span></h1>
   <p class="script-line">{{ home.heroScript }}</p>
   <p class="sub">{{ home.heroIntro }}</p>
@@ -109,7 +109,7 @@ permalink: /index.html
   <a class="btn btn-gold" href="contact.html">{{ site.ctaButton }}</a>
 </div>
 <footer><div class="wrap">
-  <div class="f-brand"><img src="/images/tiger-s-eyes-logo-431ec7f0.webp" alt=""><div>{{ site.footerLine | safe }}</div></div>
+  <div class="f-brand"><img src="{{ site.logo }}" alt=""><div>{{ site.footerLine | safe }}</div></div>
   <div><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
   <nav aria-label="Footer"><a href="about.html">About</a><a href="microblading.html">Microblading</a><a href="artwork.html">Artwork</a><a href="tattoos.html">Tattoos</a><a href="contact.html">Book Now</a></nav>
 </div></footer>
