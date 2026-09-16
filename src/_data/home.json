@@ -1,19 +1,8 @@
 {
-  "heroHeadline": "Enhancing your natural beauty with ",
-  "heroHeadlineGold": "artistry &amp; precision",
-  "heroScript": "Microblading · Bespoke Artwork · Tattoos",
-  "heroIntro": "Specialising in enhancing your natural beauty through our three core services: Microblading, bespoke personalised artwork, and professional tattooing. Our mission is to provide a transformative experience, ensuring each client leaves feeling confident and revitalized.",
-  "servicesHeading": "Our Core Services",
-  "servicesIntro": "Our studio is designed to be a sanctuary where artistry meets precision, offering safe and effective solutions tailored to your unique aesthetic desires.",
-  "meetHeading": "Meet Louise……..",
-  "meetSub": "Your trusted beauty expert",
-  "meetText1": "I'm Louise Curel, business owner and artistic director at Tiger's Eyes. My goal is to help you feel completely at ease with your semi-permanent make-up while creating a beautifully defined version of you.",
-  "meetText2": "With a focus on artistry, precision and a welcoming atmosphere, I make sure every client feels comfortable from the moment they walk in. Join me on your journey to a stunning new look.",
-  "portrait": "/images/louise-curel-business-owner-and-artistic-5cc868b6.webp",
   "cards": [
     {
       "title": "Microblading",
-      "price": "£250 · Full Treatment",
+      "price": "£200 · Full Treatment",
       "text": "Soft, natural, bespoke brows using the latest 'Nano Blade' techniques — perfect brows, every day. Includes top-up after 6–8 weeks."
     },
     {
@@ -26,5 +15,16 @@
       "price": "From £50 · Bespoke Designs",
       "text": "Professional bespoke designs tailored to your request — including two-part tattoos for you and a loved one, and cover-ups."
     }
-  ]
+  ],
+  "servicesHeading": "Our Core Services",
+  "heroScript": "Microblading · Bespoke Artwork · Tattoos",
+  "servicesIntro": "Our studio is designed to be a sanctuary where artistry meets precision, offering safe and effective solutions tailored to your unique aesthetic desires.",
+  "heroHeadlineGold": "artistry &amp; precision",
+  "heroHeadline": "Enhancing your natural beauty with ",
+  "heroIntro": "Specialising in enhancing your natural beauty through our three core services: Microblading, bespoke personalised artwork, and professional tattooing. Our mission is to provide a transformative experience, ensuring each client leaves feeling confident and revitalized.",
+  "meetSub": "Your trusted beauty expert",
+  "portrait": "/images/louise-curel-business-owner-and-artistic-5cc868b6.webp",
+  "meetHeading": "Meet Louise……..",
+  "meetText1": "I'm Louise Curel, business owner and artistic director at Tiger's Eyes. My goal is to help you feel completely at ease with your semi-permanent make-up while creating a beautifully defined version of you.",
+  "meetText2": "With a focus on artistry, precision and a welcoming atmosphere, I make sure every client feels comfortable from the moment they walk in. Join me on your journey to a stunning new look."
 }
