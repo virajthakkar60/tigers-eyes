@@ -1,12 +1,36 @@
 {
-  "heading": "Professional Bespoke Designs, ",
-  "headingGold": "Tailored to You",
   "sub": "CPD Certified Tattoo Artist · Fully insured · Designs created and developed from commissioned works",
-  "galleryHeading": "From stencil to skin",
-  "note": "a pre-appointment consultation, and work that is safe, hygienic, and compliant with UK standards.",
-  "priceHeading": "Tattoo Price Guide",
+  "headingGold": "Tailored to You",
+  "heading": "Professional Bespoke Designs, ",
   "priceIntro": "Prices dependent on design and size.",
   "minCharge": "Minimum charge to cover set up and consumables — £50",
+  "depositsNote": "Non-refundable but transferable once.",
+  "galleryHeading": "From stencil to skin",
+  "gallery": [
+    {
+      "image": "/images/butterfly-and-vine-tattoo-beside-its-ori-7ef8ebd9.webp",
+      "caption": "Butterfly commission"
+    },
+    {
+      "image": "/images/butterfly-tattoo-with-matching-stencil-o-36ae81ce.webp",
+      "caption": "Design to skin"
+    },
+    {
+      "image": "/images/fine-line-floral-tattoo-on-forearm-c7faa40c.webp",
+      "caption": "Fine-line floral"
+    },
+    {
+      "image": "whatsapp-image-2026-09-18-at-9.42.04-am.jpeg",
+      "caption": "2-part tattoos for you and a loved one — create an overall design and, after consultation, the location and specifics can be discussed and positioned accordingly"
+    },
+    {
+      "image": "/images/cover-up-tattoo-on-the-forearm-ebf0645a.webp",
+      "caption": "Cover ups"
+    }
+  ],
+  "note": "a pre-appointment consultation, and work that is safe, hygienic, and compliant with UK standards.",
+  "deposits": "£20 small/medium tattoos · £50 large tattoos · £100 day sessions.",
+  "priceHeading": "Tattoo Price Guide",
   "rows": [
     {
       "name": "Small Tattoos",
@@ -37,30 +61,6 @@
       "meta": "(following consultation)",
       "price": "£20–£60",
       "detail": "For bespoke, highly detailed artwork."
-    }
-  ],
-  "deposits": "£20 small/medium tattoos · £50 large tattoos · £100 day sessions.",
-  "depositsNote": "Non-refundable but transferable once.",
-  "gallery": [
-    {
-      "image": "/images/butterfly-and-vine-tattoo-beside-its-ori-7ef8ebd9.webp",
-      "caption": "Butterfly commission"
-    },
-    {
-      "image": "/images/butterfly-tattoo-with-matching-stencil-o-36ae81ce.webp",
-      "caption": "Design to skin"
-    },
-    {
-      "image": "/images/fine-line-floral-tattoo-on-forearm-c7faa40c.webp",
-      "caption": "Fine-line floral"
-    },
-    {
-      "image": "/images/two-part-heart-tattoo-made-of-a-loved-on-907fe7a1.webp",
-      "caption": "2-part tattoos for you and a loved one — create an overall design and, after consultation, the location and specifics can be discussed and positioned accordingly"
-    },
-    {
-      "image": "/images/cover-up-tattoo-on-the-forearm-ebf0645a.webp",
-      "caption": "Cover ups"
     }
   ]
 }
