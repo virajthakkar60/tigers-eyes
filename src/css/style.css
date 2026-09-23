@@ -203,3 +203,15 @@ footer nav a{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;white
 #lightbox .lb-hint{position:absolute;top:24px;left:0;right:0;text-align:center;color:var(--taupe);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;pointer-events:none}
 
 
+
+/* Social media icons (header, footer, contact) */
+.nav-social{display:flex;gap:14px;align-items:center}
+.nav-social a{display:inline-flex;color:var(--gold-deep);border-bottom:none!important;padding:0}
+.nav-social a:hover{color:var(--gold)}
+.f-social{display:flex;gap:14px;margin-top:12px}
+.f-social a{display:inline-flex;color:var(--gold-deep)}
+.f-social a:hover{color:var(--gold)}
+.contact-social{display:flex;gap:16px;align-items:center;margin-top:24px}
+.contact-social .lbl{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.contact-social a{display:inline-flex;color:var(--gold-deep)}
+.contact-social a:hover{color:var(--gold)}

@@ -45,6 +45,12 @@ collections:
           - { name: ctaSub, label: "Tagline subtitle", widget: string }
           - { name: ctaButton, label: "Bottom button text", widget: string }
           - { name: logo, label: "Logo", widget: image, required: false }
+          - name: social
+            label: "Social media links (leave blank to hide an icon)"
+            widget: object
+            fields:
+              - { name: instagram, label: "Instagram URL", widget: string, required: false }
+              - { name: facebook, label: "Facebook URL", widget: string, required: false }
 
   - name: "home"
     label: "Home page"
@@ -194,3 +200,21 @@ collections:
           - { name: formHeading, label: "Form heading", widget: string }
           - { name: formIntro, label: "Form intro", widget: text }
           - { name: serving, label: "Areas served", widget: text }
+
+  - name: "blog"
+    label: "Blog posts"
+    label_singular: "Blog post"
+    description: "Write articles. New posts start as a Draft (hidden). Untick 'Draft' and Publish to make a post live — the Blog appears in the menu automatically once the first post is live."
+    folder: "src/blog/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    sort: "date:desc"
+    fields:
+      - { name: title, label: "Title", widget: string }
+      - { name: date, label: "Date", widget: datetime, default: "" }
+      - { name: draft, label: "Draft (untick this to publish the post)", widget: boolean, default: true }
+      - { name: description, label: "Short summary (shown in Google & on the blog list)", widget: text, required: false }
+      - { name: thumbnail, label: "Cover photo", widget: image, required: false }
+      - { name: body, label: "Article", widget: markdown }

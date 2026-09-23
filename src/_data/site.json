@@ -6,5 +6,9 @@
   "footerLine": "© 2026 Tiger's Eyes · Louise Curel<br>Telford · Wolverhampton · Ketley",
   "ctaScript": "Brows that speak before you do",
   "ctaSub": "Precision · Beauty · Confidence",
-  "ctaButton": "Book Your Consultation"
+  "ctaButton": "Book Your Consultation",
+  "social": {
+    "instagram": "https://www.instagram.com/t16erseyes/",
+    "facebook": ""
+  }
 }

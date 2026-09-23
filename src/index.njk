@@ -1,41 +1,162 @@
 ---
-permalink: /index.html
+permalink: /
 ---
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tiger's Eyes | Microblading, Bespoke Artwork & Tattoos — Telford & Wolverhampton</title>
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="favicon-180.png">
+<title>Fine Line Tattoo Artist Telford | Brows & Personalised Artwork</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/favicon-180.png">
 <meta name="theme-color" content="#c29a4b">
-<meta name="description" content="Tiger's Eyes — CPD certified microblading, semi-permanent makeup, bespoke personalised artwork and professional tattooing by Louise Curel. Telford, Wolverhampton & Ketley.">
+<meta name="description" content="Fine line tattoo artist Telford offering natural brows, personalised artwork and tattoos. Discover beauty, tattoo and bespoke artwork services in Telford.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="canonical" href="https://tigerseyes.co.uk/">
+<link rel="preload" as="image" href="{{ site.logo }}" fetchpriority="high">
+<meta name="geo.region" content="GB-TFW">
+<meta name="geo.placename" content="Telford, Shropshire">
+<meta name="geo.region" content="GB-WLV">
+<meta name="geo.placename" content="Wolverhampton">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://tigerseyes.co.uk/#organization",
+  "name": "Tiger's Eyes",
+  "url": "https://tigerseyes.co.uk/",
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://tigerseyes.co.uk/#logo",
+    "url": "https://tigerseyes.co.uk/images/tiger-s-eyes-logo-431ec7f0.webp",
+    "contentUrl": "https://tigerseyes.co.uk/images/tiger-s-eyes-logo-431ec7f0.webp"
+  },
+  "telephone": "+44 7792 948745",
+  "email": "info@tigerseyes.co.uk"{% if site.social.instagram or site.social.facebook %},
+  "sameAs": [{% if site.social.instagram %}"{{ site.social.instagram }}"{% endif %}{% if site.social.instagram and site.social.facebook %}, {% endif %}{% if site.social.facebook %}"{{ site.social.facebook }}"{% endif %}]{% endif %}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://tigerseyes.co.uk/#website",
+  "url": "https://tigerseyes.co.uk/",
+  "name": "Tiger's Eyes",
+  "publisher": { "@id": "https://tigerseyes.co.uk/#organization" },
+  "inLanguage": "en-GB"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "@id": "https://tigerseyes.co.uk/#business",
+  "name": "Tiger's Eyes",
+  "url": "https://tigerseyes.co.uk/",
+  "image": "https://tigerseyes.co.uk/images/tiger-s-eyes-logo-431ec7f0.webp",
+  "telephone": "+44 7792 948745",
+  "email": "info@tigerseyes.co.uk",
+  "description": "Tiger's Eyes provides microblading, professional tattooing and bespoke personalised artwork services in Telford and Wolverhampton."{% if site.social.instagram or site.social.facebook %},
+  "sameAs": [{% if site.social.instagram %}"{{ site.social.instagram }}"{% endif %}{% if site.social.instagram and site.social.facebook %}, {% endif %}{% if site.social.facebook %}"{{ site.social.facebook }}"{% endif %}]{% endif %}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://tigerseyes.co.uk/#voco-telford",
+  "name": "Tiger's Eyes - VOCO Hotel Telford",
+  "url": "https://tigerseyes.co.uk/",
+  "telephone": "+44 7792 948745",
+  "email": "info@tigerseyes.co.uk",
+  "parentOrganization": { "@id": "https://tigerseyes.co.uk/#organization" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "VOCO Hotel, St. Quentin Gate",
+    "addressLocality": "Telford",
+    "addressRegion": "Shropshire",
+    "postalCode": "TF3 4EH",
+    "addressCountry": "GB"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://tigerseyes.co.uk/#wolverhampton",
+  "name": "Tiger's Eyes - Vean Tattoo Academy",
+  "url": "https://tigerseyes.co.uk/",
+  "telephone": "+44 7792 948745",
+  "email": "info@tigerseyes.co.uk",
+  "parentOrganization": { "@id": "https://tigerseyes.co.uk/#organization" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Wolverhampton",
+    "postalCode": "WV1 4LF",
+    "addressCountry": "GB"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://tigerseyes.co.uk/#ketley",
+  "name": "Tiger's Eyes - Ketley",
+  "url": "https://tigerseyes.co.uk/",
+  "telephone": "+44 7792 948745",
+  "email": "info@tigerseyes.co.uk",
+  "parentOrganization": { "@id": "https://tigerseyes.co.uk/#organization" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ketley",
+    "addressRegion": "Telford",
+    "postalCode": "TF1 5FD",
+    "addressCountry": "GB"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://tigerseyes.co.uk/#service",
+  "name": "Microblading, Tattooing and Bespoke Artwork",
+  "serviceType": "Microblading, Professional Tattooing and Personalised Artwork",
+  "provider": { "@id": "https://tigerseyes.co.uk/#organization" },
+  "areaServed": [
+    { "@type": "City", "name": "Telford" },
+    { "@type": "City", "name": "Wolverhampton" }
+  ],
+  "url": "https://tigerseyes.co.uk/"
+}
+</script>
 </head>
 <body><header><nav class="nav" aria-label="Main navigation">
-<a class="brand" href="index.html"><img src="{{ site.logo }}" alt="Tiger's Eyes logo"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
+<a class="brand" href="/"><img src="{{ site.logo }}" alt="Tiger's Eyes logo" decoding="async"><span class="gold-text">Tiger's&nbsp;Eyes</span></a>
 <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
-<ul class="nav-links" id="navLinks"><li><a href="index.html" class="active">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="microblading.html">Microblading</a></li>
-<li><a href="artwork.html">Bespoke Artwork</a></li>
-<li><a href="tattoos.html">Tattoos &amp; Prices</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a class="nav-cta" href="contact.html">Book Now</a></li></ul>
+<ul class="nav-links" id="navLinks"><li><a href="/" class="active">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/microblading">Microblading</a></li>
+<li><a href="/artwork">Bespoke Artwork</a></li>
+<li><a href="/tattoos">Tattoos &amp; Prices</a></li>
+<li><a href="/contact">Contact</a></li>
+{% if collections.post and (collections.post | length) %}<li><a href="/blog">Blog</a></li>{% endif %}<li><a class="nav-cta" href="/contact">Book Now</a></li>{% if site.social.instagram or site.social.facebook %}<li class="nav-social">{% if site.social.instagram %}<a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Tiger's Eyes on Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>{% endif %}{% if site.social.facebook %}<a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Tiger's Eyes on Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M15 3h-2.5C10 3 9 4.6 9 6.5V9H7v3h2v9h3v-9h2.4l.6-3H12V7c0-.7.3-1 1-1h2V3z"/></svg></a>{% endif %}</li>{% endif %}</ul>
 </nav></header>
 <main>
 <section class="hero">
-  <img class="logo-lg" src="{{ site.logo }}" alt="Tiger's Eyes — golden eye emblem">
+  <img class="logo-lg" src="{{ site.logo }}" alt="Tiger's Eyes — golden eye emblem" fetchpriority="high" decoding="async">
   <h1>{{ home.heroHeadline | safe }}<span class="gold-text">{{ home.heroHeadlineGold | safe }}</span></h1>
   <p class="script-line">{{ home.heroScript }}</p>
   <p class="sub">{{ home.heroIntro }}</p>
   <div class="hero-ctas">
-    <a class="btn btn-gold" href="contact.html">Book a Consultation</a>
-    <a class="btn btn-line" href="about.html">Meet Louise</a>
+    <a class="btn btn-gold" href="/contact">Book a Consultation</a>
+    <a class="btn btn-line" href="/about">Meet Louise</a>
   </div>
   <div class="badges">
     <span><b>CPD</b> Certified Artist</span><span><b>Fully</b> Insured</span>
@@ -56,30 +177,30 @@ permalink: /index.html
     <p style="max-width:66ch;margin:16px auto 0;color:var(--muted)">{{ home.servicesIntro }}</p>
     <div class="svc-grid">
       <article class="svc-card reveal">
-        <div class="ph"><img src="/images/microblading-client-result-bespoke-brow--10814a6f.webp" alt="Microblading client result — bespoke brow shaping"></div>
+        <div class="ph"><img src="/images/microblading-client-result-bespoke-brow--10814a6f.webp" alt="Microblading client result — bespoke brow shaping" loading="lazy" decoding="async"></div>
         <div class="body">
           <h3>{{ home.cards[0].title }}</h3>
           <p class="from">{{ home.cards[0].price }}</p>
           <p>{{ home.cards[0].text }}</p>
-          <a class="btn btn-line" href="microblading.html">Explore</a>
+          <a class="btn btn-line" href="/microblading">Explore</a>
         </div>
       </article>
       <article class="svc-card reveal">
-        <div class="ph"><img src="/images/framed-bespoke-bee-artwork-with-personal-84069323.webp" alt="Framed bespoke bee artwork with personalised words"></div>
+        <div class="ph"><img src="/images/framed-bespoke-bee-artwork-with-personal-84069323.webp" alt="Framed bespoke bee artwork with personalised words" loading="lazy" decoding="async"></div>
         <div class="body">
           <h3>{{ home.cards[1].title }}</h3>
           <p class="from">{{ home.cards[1].price }}</p>
           <p>{{ home.cards[1].text }}</p>
-          <a class="btn btn-line" href="artwork.html">Explore</a>
+          <a class="btn btn-line" href="/artwork">Explore</a>
         </div>
       </article>
       <article class="svc-card reveal">
-        <div class="ph"><img src="/images/fine-line-floral-tattoo-on-forearm-c7faa40c.webp" alt="Fine-line floral tattoo on forearm"></div>
+        <div class="ph"><img src="/images/fine-line-floral-tattoo-on-forearm-c7faa40c.webp" alt="Fine-line floral tattoo on forearm" loading="lazy" decoding="async"></div>
         <div class="body">
           <h3>{{ home.cards[2].title }}</h3>
           <p class="from">{{ home.cards[2].price }}</p>
           <p>{{ home.cards[2].text }}</p>
-          <a class="btn btn-line" href="tattoos.html">Explore</a>
+          <a class="btn btn-line" href="/tattoos">Explore</a>
         </div>
       </article>
     </div>
@@ -91,13 +212,13 @@ permalink: /index.html
     <p class="sub">{{ home.meetSub }}</p>
     <div class="duo duo-about">
       <figure class="portrait reveal">
-        <img src="{{ home.portrait }}" alt="Louise Curel, business owner and artistic director at Tiger's Eyes">
+        <img src="{{ home.portrait }}" alt="Louise Curel, business owner and artistic director at Tiger's Eyes" decoding="async">
         <figcaption>Louise Curel</figcaption>
       </figure>
       <div class="prose reveal">
         <p>{{ home.meetText1 }}</p>
         <p>{{ home.meetText2 }}</p>
-        <a class="btn btn-line" href="about.html" style="margin-top:8px">Read Louise's Full Story</a>
+        <a class="btn btn-line" href="/about" style="margin-top:8px">Read Louise's Full Story</a>
       </div>
     </div>
   </div>
@@ -106,12 +227,12 @@ permalink: /index.html
 <div class="cta-band">
   <span class="script gold-text" style="-webkit-text-fill-color:initial;color:var(--gold-deep)">{{ site.ctaScript }}</span>
   <p>{{ site.ctaSub }}</p>
-  <a class="btn btn-gold" href="contact.html">{{ site.ctaButton }}</a>
+  <a class="btn btn-gold" href="/contact">{{ site.ctaButton }}</a>
 </div>
 <footer><div class="wrap">
-  <div class="f-brand"><img src="{{ site.logo }}" alt=""><div>{{ site.footerLine | safe }}</div></div>
-  <div><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
-  <nav aria-label="Footer"><a href="about.html">About</a><a href="microblading.html">Microblading</a><a href="artwork.html">Artwork</a><a href="tattoos.html">Tattoos</a><a href="contact.html">Book Now</a></nav>
+  <div class="f-brand"><img src="{{ site.logo }}" alt="" loading="lazy" decoding="async"><div>{{ site.footerLine | safe }}</div></div>
+  <div><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a>{% if site.social.instagram or site.social.facebook %}<div class="f-social">{% if site.social.instagram %}<a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Tiger's Eyes on Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>{% endif %}{% if site.social.facebook %}<a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Tiger's Eyes on Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M15 3h-2.5C10 3 9 4.6 9 6.5V9H7v3h2v9h3v-9h2.4l.6-3H12V7c0-.7.3-1 1-1h2V3z"/></svg></a>{% endif %}</div>{% endif %}</div>
+  <nav aria-label="Footer"><a href="/about">About</a><a href="/microblading">Microblading</a><a href="/artwork">Artwork</a><a href="/tattoos">Tattoos</a>{% if collections.post and (collections.post | length) %}<a href="/blog">Blog</a>{% endif %}<a href="/contact">Book Now</a></nav>
 </div></footer>
 <script>
 function toggleMenu(btn){const l=document.getElementById('navLinks');const o=l.classList.toggle('open');btn.setAttribute('aria-expanded',o);}

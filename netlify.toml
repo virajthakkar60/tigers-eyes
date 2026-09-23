@@ -1,3 +1,67 @@
 [build]
   command = "npm run build"
   publish = "_site"
+
+# ---------------------------------------------------------------------------
+# 301 redirects: preserve every old .html URL after the move to clean URLs.
+# Anyone with an old link (or old search-engine result) lands on the new URL.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/microblading.html"
+  to = "/microblading"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  to = "/artwork"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tattoos.html"
+  to = "/tattoos"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thank-you.html"
+  to = "/thank-you"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# Caching. Images carry content-hashed filenames, so they can be cached hard.
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/favicon-180.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

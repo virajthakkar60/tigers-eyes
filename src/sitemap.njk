@@ -1,0 +1,23 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- set pages = [
+  { loc: "https://tigerseyes.co.uk/", priority: "1.0" },
+  { loc: "https://tigerseyes.co.uk/about", priority: "0.8" },
+  { loc: "https://tigerseyes.co.uk/microblading", priority: "0.9" },
+  { loc: "https://tigerseyes.co.uk/artwork", priority: "0.8" },
+  { loc: "https://tigerseyes.co.uk/tattoos", priority: "0.9" },
+  { loc: "https://tigerseyes.co.uk/contact", priority: "0.7" }
+] %}
+{%- for p in pages %}
+  <url>
+    <loc>{{ p.loc }}</loc>
+    <lastmod>{{ page.date | dateISO }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>{{ p.priority }}</priority>
+  </url>
+{%- endfor %}
+</urlset>
