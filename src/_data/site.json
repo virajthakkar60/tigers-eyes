@@ -9,6 +9,10 @@
   "ctaButton": "Book Your Consultation",
   "social": {
     "instagram": "https://www.instagram.com/t16erseyes/",
-    "facebook": ""
+    "facebook": "https://www.facebook.com/share/1Eco4NmpYW/"
+  },
+  "analytics": {
+    "ga4": "G-CP9QGV1ZPG",
+    "gsc": "digQP274KBAdARiuexoqRO-N7Dm5vY0XDPvUawtkmME"
   }
 }

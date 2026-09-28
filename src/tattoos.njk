@@ -6,6 +6,7 @@ permalink: /tattoos/
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% include "analytics.njk" %}
 <title>Bespoke & Small Tattoo Artist Telford | Fine Line Tattoos</title>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/favicon-180.png">
@@ -46,13 +47,9 @@ permalink: /tattoos/
     <p class="eyebrow">Client Results</p>
     <h2>{{ tattoos.galleryHeading }}</h2>
     <div class="g-grid">
-      <figure class="g-item reveal"><div class="ph"><img src="{{ tattoos.gallery[0].image }}" alt="Butterfly and vine tattoo beside its original stencil design" loading="lazy" decoding="async"></div><figcaption>{{ tattoos.gallery[0].caption }}</figcaption></figure>
-      <figure class="g-item reveal"><div class="ph"><img src="{{ tattoos.gallery[1].image }}" alt="Butterfly tattoo with matching stencil on the arm" loading="lazy" decoding="async"></div><figcaption>{{ tattoos.gallery[1].caption }}</figcaption></figure>
-      <figure class="g-item reveal"><div class="ph"><img src="{{ tattoos.gallery[2].image }}" alt="Fine-line floral tattoo along the forearm" loading="lazy" decoding="async"></div><figcaption>{{ tattoos.gallery[2].caption }}</figcaption></figure>
-    </div>
-    <div class="g-grid two">
-      <figure class="g-item reveal"><div class="ph"><img src="{{ tattoos.gallery[3].image }}" alt="Two-part heart tattoo made of a loved one's name" loading="lazy" decoding="async"></div><figcaption>{{ tattoos.gallery[3].caption }}</figcaption></figure>
-      <figure class="g-item reveal"><div class="ph"><img src="{{ tattoos.gallery[4].image }}" alt="Cover-up tattoo on the forearm" loading="lazy" decoding="async"></div><figcaption>{{ tattoos.gallery[4].caption }}</figcaption></figure>
+      {% for g in tattoos.gallery %}
+      <figure class="g-item reveal"><div class="ph"><img src="{{ g.image }}" alt="{{ g.caption }}" loading="lazy" decoding="async"></div><figcaption>{{ g.caption }}</figcaption></figure>
+      {% endfor %}
     </div>
     <div class="note-strip reveal" style="text-align:left"><b>Every tattoo includes:</b> {{ tattoos.note }}</div>
   </div>
