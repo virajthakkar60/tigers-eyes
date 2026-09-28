@@ -154,7 +154,7 @@ permalink: /
   <img class="logo-lg" src="{{ site.logo }}" alt="Tiger's Eyes — golden eye emblem" fetchpriority="high" decoding="async">
   <h1>{{ home.heroHeadline | safe }}<span class="gold-text">{{ home.heroHeadlineGold | safe }}</span></h1>
   <p class="script-line">{{ home.heroScript }}</p>
-  <p class="sub">{{ home.heroIntro }}</p>
+  <p class="sub">{{ home.heroIntro | replace('Microblading', '<a href="/microblading">Microblading</a>') | replace('bespoke personalised artwork', '<a href="/artwork">bespoke personalised artwork</a>') | replace('professional tattooing', '<a href="/tattoos">professional tattooing</a>') | safe }}</p>
   <div class="hero-ctas">
     <a class="btn btn-gold" href="/contact">Book a Consultation</a>
     <a class="btn btn-line" href="/about">Meet Louise</a>

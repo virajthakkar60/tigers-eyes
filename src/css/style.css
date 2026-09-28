@@ -215,3 +215,7 @@ footer nav a{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;white
 .contact-social .lbl{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .contact-social a{display:inline-flex;color:var(--gold-deep)}
 .contact-social a:hover{color:var(--gold)}
+
+/* in-content (internal) links */
+main p a:not(.btn){color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;transition:color .2s}
+main p a:not(.btn):hover{color:var(--gold)}

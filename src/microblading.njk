@@ -34,7 +34,7 @@ permalink: /microblading/
   <p class="eyebrow">Tiger's Eyes Microblading</p>
   <h1>{{ microblading.heading }}<span class="gold-text">{{ microblading.headingGold }}</span></h1>
   <span class="script">{{ microblading.script }}</span>
-  <p class="sub">{{ microblading.sub }}</p>
+  <p class="sub">{{ microblading.sub | replace('CPD Certified Microblading Artist · Fully insured', '<a href="/">CPD Certified Microblading Artist · Fully insured</a>') | safe }}</p>
 </div>
 <div class="celestial" aria-hidden="true"><span class="line"></span>
 <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ permalink: /microblading/
   <div class="wrap feature">
     <div class="prose reveal">
       <h2>{{ microblading.bodyHeading }}</h2>
-      <p>{{ microblading.body1 | safe }}</p>
+      <p>{{ microblading.body1 | replace('Professional bespoke brow design', '<a href="/artwork">Professional bespoke brow design</a>') | safe }}</p>
       <p>{{ microblading.body2 }}</p>
       <div class="note-strip"><b>Important:</b> {{ microblading.note }}</div>
     </div>

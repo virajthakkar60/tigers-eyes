@@ -47,8 +47,8 @@ permalink: /artwork/
     <div class="ph reveal"><img src="{{ artwork.featureImage }}" alt="Framed bespoke bee artwork — the design drawn from personalised words" decoding="async"></div>
     <div class="prose reveal">
       <h2>{{ artwork.bodyHeading }}</h2>
-      <p>{{ artwork.body1 }}</p>
-      <p><b>{{ artwork.body2 }}</b>{{ artwork.body2b }}</p>
+      <p>{{ artwork.body1 | replace('During your initial design consultation with Louise, you will discuss the story that you want to tell, decide how you want your moment to be captured', '<a href="/">During your initial design consultation with Louise, you will discuss the story that you want to tell, decide how you want your moment to be captured</a>') | safe }}</p>
+      <p><b>{{ artwork.body2 }}</b>{{ artwork.body2b | replace('Larger commissioned works are discussed during consultation', '<a href="/tattoos">Larger commissioned works are discussed during consultation</a>') | safe }}</p>
       <a class="btn btn-gold" href="/contact">{{ artwork.cta }}</a>
     </div>
   </div>

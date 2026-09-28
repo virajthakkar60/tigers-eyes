@@ -33,7 +33,7 @@ permalink: /tattoos/
 <div class="page-hero">
   <p class="eyebrow">Tiger's Eyes Tattoos</p>
   <h1>{{ tattoos.heading }}<span class="gold-text">{{ tattoos.headingGold }}</span></h1>
-  <p class="sub">{{ tattoos.sub }}</p>
+  <p class="sub">{{ tattoos.sub | replace('Designs created and developed from commissioned works', '<a href="/artwork">Designs created and developed from commissioned works</a>') | replace('CPD Certified Tattoo Artist · Fully insured', '<a href="/">CPD Certified Tattoo Artist · Fully insured</a>') | safe }}</p>
 </div>
 <div class="celestial" aria-hidden="true"><span class="line"></span>
 <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
